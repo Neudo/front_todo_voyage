@@ -87,3 +87,16 @@ button{
     border-radius: 7px;
     border: none;
 }
+
+li input {
+    width: auto;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+input:checked{
+    text-decoration: underline;
+}

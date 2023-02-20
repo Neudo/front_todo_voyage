@@ -39,7 +39,7 @@ export default {
         <div class="row">
             <div v-for="(location, index) in locations " :key="location.id" class="col-12 col-md-6 col-lg-4">
                 <div class="card-location">
-                    <router-link :to="'/locations/' + location.id" >{{location.name}}</router-link><a @click="deleteLocation(location.id)" href="#">[supprimer]</a>
+                    <router-link :to="'/locations/' + location.id" >{{location.name}}</router-link><a @click.prevent="deleteLocation(location.id)" href="#">[supprimer]</a>
                     
                 </div>
             </div>
